@@ -20,7 +20,10 @@ public class Mascotas {
         this.edad = edad;
         this.patas = patas;
     }
-
+/**
+ * El metodo getNombre es para conseguir el nmbre del objeto
+ * @return retorna el nombre
+ */
     public  String getNombre() {
         return nombre;
     }

@@ -91,7 +91,7 @@ public class RivadeneiraTestArrayList {
               //System.out.println( ((Mascotas)it.next()).getNombre() );
               
               Mascotas mascota = (Mascotas) it.next();
-              System.out.println(" nombre " + mascota.getNombre()+ " patas " + mascota.getPatas()+ " edad " + mascota.getEdad());
+              System.out.println(" nombre " + mascota.()+ " patas " + mascota.getPatas()+ " edad " + mascota.getEdad());
             }
     }
 
