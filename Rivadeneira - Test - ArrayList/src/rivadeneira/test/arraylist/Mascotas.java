@@ -10,23 +10,23 @@ package rivadeneira.test.arraylist;
  * @author jose luis
  */
 public class Mascotas {
-    private static String nombre;// ATRIBUTOS
+    private  String nombre;// ATRIBUTOS
     private int edad;// ATRIBUTOS
     private int patas;// ATRIBUTOS
 
 
-    public Mascotas(String nombre, int edad, int patas) {//construcctor
+    public Mascotas(String nombre, int patas, int edad) {//construcctor
         this.nombre = nombre;
         this.edad = edad;
         this.patas = patas;
     }
 
-    public static String getNombre() {
+    public  String getNombre() {
         return nombre;
     }
 
-    public static void setNombre(String nombre) {
-        Mascotas.nombre = nombre;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public int getEdad() {
