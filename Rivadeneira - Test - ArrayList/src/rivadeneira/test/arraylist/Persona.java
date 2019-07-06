@@ -12,8 +12,39 @@ import java.util.ArrayList;
  * @author jose luis
  */
 public class Persona {
-    private static String nombre;// ATRIBUTOS
+
+    private String nombre;// ATRIBUTOS
     private int edad;// ATRIBUTOS
-    private ArrayList <Mascotas> mascotas ;
- 
+    private ArrayList<Mascotas> mascotas;
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public Persona(String nombre, int edad) {//construcctor
+        this.nombre = nombre;
+        this.edad = edad;
+        mascotas = new ArrayList();
+    }
+
+    public int agregarMascota(Mascotas mascota) {
+        mascotas.add(mascota);
+        return mascotas.size();
+        
+    }
+    public int cuantasMascotasTenes(){
+        return mascotas.size();
+    }
 }

@@ -18,7 +18,8 @@ public class RivadeneiraTestArrayList {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) { /*
+        
         Scanner teclado = new Scanner(System.in);
         /*  ArrayList elem = new ArrayList();//genera un arrayList llamado elem que puede contener cualquier tipo de datos (int,string,double ,etc)
         Scanner teclado = new Scanner(System.in);
@@ -47,7 +48,7 @@ public class RivadeneiraTestArrayList {
         elem.add(4);
         elem.add(7);
         System.out.println(elem);// muestra el contenido totas del arrayList
-         */
+       
         ArrayList<Mascotas> mascotas = new ArrayList();
         //Mascotas perro1 = new Mascotas("tory", 4, 22);  //iniciando un nuevo objeto del tipo de dato Mascotas
         //mascotas.add(new Mascotas("tory", 4, 22));//genera un nuevo elemento del tipo Mascotas lo agrega a la lista mascotas y lo presetea sin pasar por una variable como gato1 
@@ -91,8 +92,26 @@ public class RivadeneiraTestArrayList {
               //System.out.println( ((Mascotas)it.next()).getNombre() );
               
               Mascotas mascota = (Mascotas) it.next();
-              System.out.println(" nombre " + mascota.()+ " patas " + mascota.getPatas()+ " edad " + mascota.getEdad());
+              System.out.println(" nombre " + mascota.getNombre()+ " patas " + mascota.getPatas()+ " edad " + mascota.getEdad());
             }
     }
+*/
 
+       // ArrayList<Personas> mascotas = new ArrayList();
+        Persona per1 = new Persona("Jose Luis", 45); // generamos el objeto per1 del tipo Persona
+        Persona per2 = new Persona("Marta", 53); 
+        Mascotas perro = new Mascotas ("BoBy",4,7);//generamos el objeto perro del tipo Mascotas
+        Mascotas gato = new Mascotas ("Sultan",4,2);
+        Mascotas loro = new Mascotas ("Pepe",2,10);
+        per1.agregarMascota(perro);
+        per2.agregarMascota(gato);
+        per1.agregarMascota(loro);
+        
+        int edadDelGato ;
+        edadDelGato = gato.getEdad();// guarda en la variable edadDelGato la edad del mismo ,la pido con getEdad
+        gato.setEdad(edadDelGato + 1);// setea la edad del gato sumandole un año mas
+        // gato.setEdad (gato.getEdad() + 1);
+        System.out.println(gato.getEdad()); //imprime la nueva edad del gato 
+    System.out.println(per2.cuantasMascotasTenes());//devuelve la cantidad de mascotas que tiene per2
+    }
 }
