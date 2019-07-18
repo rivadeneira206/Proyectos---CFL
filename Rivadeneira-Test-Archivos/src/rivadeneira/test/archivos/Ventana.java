@@ -172,8 +172,7 @@ public class Ventana extends javax.swing.JFrame {
         if      ((evt.getKeyChar() >= 48) //comprueba que sea un numero entre 0 y 9
                 && (evt.getKeyChar() <= 57)//comprueba que sea un numero entre 0 y 9
                 && (edad.getText().length()<=3) ////comprueba que sean solo tres caracteres 
-                && (edad.getText().length()==0 //si da false es porque hay algo estcrito y hace la siguiente comprobacion <=150  
-                || Integer.parseInt(edad.getText()+evt.getKeyChar())<=150)) {
+                && (Integer.parseInt(edad.getText()+evt.getKeyChar())<=150)) {
         System.out.println(evt.getKeyChar());
         edad.setBackground(Color.white);
                     
